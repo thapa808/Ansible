@@ -1,0 +1,23 @@
+# To install Ansible in RHEL8 you need to install EPEL repository first.
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+#Update your system
+sudo yum update
+
+#Verify EPEL repository
+sudo rpm -qa | grep epel
+ 
+#To see list of repo in your system
+yum/dnf repolist 
+
+#To install Ansible
+dnf/yum install ansible
+
+------------------------------------------------------------------------------------------------------------------
+sudo yum install epel-release
+sudo yum install ansible
+
+-------------------------------------------------------------------------------------------------------------------
+
+ansible-core is available from the RHEL 8.6 repositories
+dnf install ansible-core (Not working)
